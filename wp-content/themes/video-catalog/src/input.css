@@ -12,5 +12,17 @@
   .wrapper {
     @apply max-w-screen-2xl w-10/12 mx-auto; 
   }
+  .footer-div{
+    @apply pt-12 pb-14 px-10 bg-graywhite;
+  }
+  h4{
+    @apply text-skyblue text-2xl ;
+  }
+  .common-text{
+    @apply leading-loose text-gray-900 text-sm;
+  }
+  .footer-div h4{
+    @apply mb-4;
+  }
 }
 

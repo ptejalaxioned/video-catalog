@@ -17,7 +17,7 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
 function my_theme_enqueue_scripts()
 {
   // Enqueue custom styling
-  wp_enqueue_style('custom-styling', get_template_directory_uri() . '/assets/css/my-style.css', array(), '1.0', 'all');
+  wp_enqueue_style('custom-styling', get_template_directory_uri() . '/assets/css/my-style-copy.css', array(), '1.0', 'all');
 
   // Enqueue output.css styling
   wp_enqueue_style('tailwindcss', get_template_directory_uri() . '/src/output.css' , array(), '1.0', 'all');

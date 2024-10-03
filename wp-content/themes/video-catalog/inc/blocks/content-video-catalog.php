@@ -107,3 +107,5 @@ if ($heading || $category_heading || $categories || $search_input_placeholder ||
   </section>
   <!--video-catalog section ends-->
 <?php } ?>
+
+
