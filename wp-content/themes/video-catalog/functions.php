@@ -46,13 +46,13 @@ if (function_exists('acf_add_options_page')) {
     'redirect'      => false
   ));
   acf_add_options_sub_page(array(
-    'page_title'  => 'Veggie Header Settings',
-    'menu_title'  => 'Veggie Header',
+    'page_title'  => 'Header Settings',
+    'menu_title'  => 'Header',
     'parent_slug' => 'theme-general-settings',
   ));
   acf_add_options_sub_page(array(
-    'page_title'  => 'Veggie Footer Settings',
-    'menu_title'  => 'Veggie Footer',
+    'page_title'  => 'Footer Settings',
+    'menu_title'  => 'Footer',
     'parent_slug' => 'theme-general-settings',
   ));
 }

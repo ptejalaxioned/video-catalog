@@ -201,35 +201,26 @@ li {
   box-sizing: border-box;
 }
 
-.wrapper {
-  max-width: 1920px;
-  width: 86.7%;
-  margin: 0 auto;
-}
 
-.all-caps,
 .single-caps::first-letter {
   text-transform: uppercase;
-}
-
-.first-caps {
-  text-transform: capitalize;
-}
-
-.heading2 {
-  padding-bottom: 3px;
-  color: #767676;
-  font-size: 44px;
-  font-weight: 900;
 }
 
 html {
   margin-top: 0px;
 }
+
 /*=================================
   Header styling starts here
 =================================*/
+.nav-list li{
+border-bottom: 2px solid white;
+}
 
+.nav-list a{
+padding:16px 32px ;
+color: white;
+ }
 /*=================================
   Header styling ends here
 =================================*/
