@@ -554,7 +554,7 @@ video {
   display: none;
 }
 
-/* .container {
+.container {
   width: 100%;
 }
 
@@ -586,7 +586,7 @@ video {
   .container {
     max-width: 1536px;
   }
-} */
+}
 
 .first-caps {
   text-transform: capitalize;
