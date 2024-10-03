@@ -16,21 +16,25 @@
     <!--header section start-->
     <header class="absolute z-20 w-full text-white font-bold top-0">
       <div class="wrapper flex w-full p-8 justify-between items-center">
-        <div class="header-left flex flex-col w-72 bg-black bg-opacity-45 items-center px-8 py-4 gap-3 ">
-          <?php
-          $icon_image = get_field('icon_image', 'option');
-          $icon_image_url =  $icon_image['url'];
-          $icon_image_alt =  $icon_image['alt'];
-          $customize_link = get_field('customize_link', 'option');
-          $customize_link_title = $customize_link['title']
-          ?>
-          <figure class="w-4/12">
-            <img src="<?php echo $icon_image_url ?>" alt="<?php echo $icon_image_alt ?>">
-          </figure>
-          <h1>
-            <a href="<?php echo $customize_link ?>" title="<?php echo $customize_link_title ?>" class="first-caps text-white font-bold text-2xl" target="_self"><?php echo $customize_link_title ?></a>
-          </h1>
-        </div>
+        <?php
+        $icon_image = get_field('icon_image', 'option');
+        $customize_link = get_field('customize_link', 'option');
+        if ($icon_image ||  $customize_link) { ?>
+          <div class="header-left flex flex-col w-72 bg-black bg-opacity-45 items-center px-8 py-4 gap-3 ">
+            <?php if ($icon_image) { ?>
+              <figure class="w-4/12">
+                <?php
+                echo wp_get_attachment_image($icon_image, 'thumbnail', false);
+                ?>
+              </figure>
+            <?php } ?>
+            <?php if ($customize_link) { ?>
+              <h1>
+                <?php echo linkAttributes($customize_link, 'first-caps text-white font-bold text-2xl'); ?>
+              </h1>
+            <?php } ?>
+          </div>
+        <?php } ?>
         <nav>
           <?php wp_nav_menu(array("theme_location" => "primary-menu", "menu_class" => "nav-list flex justify-between font-bold",))
           ?>
