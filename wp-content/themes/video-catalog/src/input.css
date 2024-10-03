@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .first-caps {
+    @apply capitalize; 
+  }
+
+  .wrapper {
+    @apply max-w-screen-2xl w-10/12 mx-auto; 
+  }
+} 
+
+
+
