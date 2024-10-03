@@ -229,52 +229,7 @@ html {
 /*=================================
   Header styling starts here
 =================================*/
-header {
-  width: 100%;
-  padding: 20px 0px;
-  position: absolute;
-  z-index: 3;
-  left: 0;
-  top: 0;
-}
 
-.nav-list {
-  display: flex;
-  justify-content: end;
-}
-
-.nav-list a {
-  padding: 12px 13px;
-  border: 1px solid transparent;
-  color: #a7a7a7;
-  font-size: 17px;
-  font-weight: 900;
-}
 /*=================================
   Header styling ends here
 =================================*/
-.line-below::after {
-  content: "";
-  width: 16rem; 
-  border: 2px solid #a9a9a9; 
-}
-
-.line-below::first-letter {
-  text-transform: uppercase;
-}
-
-.price::after {
-  content: "$";
-  font-family: "fontAwesome";
-}
-
-.dish-name::after {
-  content: " ";
-  font-family: "fontAwesome";
-}
-
-.made-with::after {
-  content: "$";
-  padding-left: 0.25rem; 
-  color: #7f1d1d; 
-}
